@@ -1,0 +1,14 @@
+C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\bin\Debug\net8.0\Week2DemoProject.exe
+C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\bin\Debug\net8.0\Week2DemoProject.deps.json
+C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\bin\Debug\net8.0\Week2DemoProject.runtimeconfig.json
+C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\bin\Debug\net8.0\Week2DemoProject.dll
+C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\bin\Debug\net8.0\Week2DemoProject.pdb
+C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\obj\Debug\net8.0\Week2DemoProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\obj\Debug\net8.0\Week2DemoProject.AssemblyInfoInputs.cache
+C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\obj\Debug\net8.0\Week2DemoProject.AssemblyInfo.cs
+C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\obj\Debug\net8.0\Week2DemoProject.csproj.CoreCompileInputs.cache
+C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\obj\Debug\net8.0\Week2DemoProject.dll
+C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\obj\Debug\net8.0\refint\Week2DemoProject.dll
+C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\obj\Debug\net8.0\Week2DemoProject.pdb
+C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\obj\Debug\net8.0\Week2DemoProject.genruntimeconfig.cache
+C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\obj\Debug\net8.0\ref\Week2DemoProject.dll
