@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System;
 using Week2DemoProject;
 
 //Console.Write("Hola, World");
@@ -153,15 +154,15 @@ using Week2DemoProject;
 //Task 02 Find Area of rectngle
 
 //int recHeight = 10;
-Console.WriteLine("Enter the Height of Rectangle");
-int recHeight = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Enter the Height of Rectangle");
+//int recHeight = Convert.ToInt32(Console.ReadLine());
 
-//int recWidth = 5;
-Console.WriteLine("Enter the Width of Rectangle");
-int recWidth = Convert.ToInt32(Console.ReadLine());
+////int recWidth = 5;
+//Console.WriteLine("Enter the Width of Rectangle");
+//int recWidth = Convert.ToInt32(Console.ReadLine());
 
-int areaofRect = recHeight * recWidth;
-Console.WriteLine("Area of Rectangle is :" + areaofRect);
+//int areaofRect = recHeight * recWidth;
+//Console.WriteLine("Area of Rectangle is :" + areaofRect);
 
 // Data Types conversions 
 
@@ -179,36 +180,163 @@ Console.WriteLine("Area of Rectangle is :" + areaofRect);
 //Console.WriteLine(varValue2);
 
 
-//Explicit Conversions
-float varValue3 = 10.01f;
-//int varValue4 = (int)varValue3;
-int varValue5 = Convert.ToInt32(varValue3);
-//float varValue2 = varValue1;
+////Explicit Conversions
+//float varValue3 = 10.01f;
+////int varValue4 = (int)varValue3;
+//int varValue5 = Convert.ToInt32(varValue3);
+////float varValue2 = varValue1;
 
-Console.WriteLine(varValue5);
-
-
-String stringVarAge = "50";
-//int age = int.Parse(stringVarAge);
-
-long a = 100000;
-int baa = (int)a;   // explicit cast
+//Console.WriteLine(varValue5);
 
 
-double x = 10.75;
-int yqq = (int)x;   // explicit: y = 10 (decimal removed)
+//String stringVarAge = "50";
+////int age = int.Parse(stringVarAge);
+
+//long a = 100000;
+//int baa = (int)a;   // explicit cast
 
 
-bool res = int.TryParse(stringVarAge, out int age);
+//double x = 10.75;
+//int yqq = (int)x;   // explicit: y = 10 (decimal removed)
 
-Console.WriteLine(baa);
-Console.WriteLine(yqq);
 
-if (int.TryParse(stringVarAge, out int age1))
-{
-    Console.WriteLine("Valid Age = " + age1);
+//bool res = int.TryParse(stringVarAge, out int age);
+
+//Console.WriteLine(baa);
+//Console.WriteLine(yqq);
+
+//if (int.TryParse(stringVarAge, out int age1))
+//{
+//    Console.WriteLine("Valid Age = " + age1);
+//}
+//else
+//{
+//    Console.WriteLine("Invalid number!");
+//}
+
+
+//Arrays
+
+//COllection of elements of the same datatypes.
+// can store multiple values in single variable
+// Identified by indexing (starts from 0)
+
+////An array is a fixed-size collection of elements of the same data type, stored in continuous memory, and accessed using index numbers.
+
+//String[] colors = new string[5];
+
+//colors[0] = "Red";
+//colors[1] = "Blue";
+//colors[2] = "Black";
+//colors[3] = "Green";
+
+////Console.WriteLine(colors[0]);
+
+//Console.WriteLine(colors[4]);
+
+
+
+//// 2nd way of Arrays
+
+//String[] colors1 = new[] { "Red", "Green", "Blue", "Black" };
+
+
+////3rd way
+
+//String[] colors2 = { "Red", "Green", "Blue", "Black" };
+
+//foreach (var loop1 in colors2)
+//{
+//    Console.WriteLine(loop1);
+//}
+
+//Statements
+
+
+//Assignment  -	Store a value in a variable
+//Expression  -	Any action statement (a++, method call, etc.)
+//Conditional - 	Decision-making statements (if, switch)
+//Iteration	Repeating code (for, foreach, while)
+
+
+// Switch Case
+
+Console.WriteLine("Enter the day of week");
+
+int dayOfWeek = int.Parse(Console.ReadLine());
+
+switch (dayOfWeek) {
+
+    case 1:
+        Console.WriteLine("Monday");
+        break;
+    case 2: 
+        Console.WriteLine("Tuesday");
+        break;
+    case 3: 
+         Console.WriteLine("Wednesday");
+         break;
+    case 4:
+   
+        Console.WriteLine("Thursday");
+        break;
+    case 5: 
+         Console.WriteLine("Friday");
+         break;
+
+    case 6:
+        Console.WriteLine("SaturDay");
+        break;
+    case 7: 
+         Console.WriteLine("Sunday");
+         break;
+    default:
+        Console.WriteLine("Please Enter valid input");
+        break;
+
 }
-else
+
+
+//Loops 
+//While loop --- Condition is checked first if condition is true loop starts,
+//if condition is false = loop runs 0 times.
+
+Console.WriteLine("Enter a input number");
+
+//int inputNum = int.Parse(Console.ReadLine());
+
+int inputNum = Convert.ToInt32(Console.ReadLine());
+
+int startNum = 0;
+
+while ( startNum <= inputNum)
 {
-    Console.WriteLine("Invalid number!");
+    Console.WriteLine(startNum);
+    startNum = startNum + 3;
+    
+
 }
+
+
+
+//do while - Loop starts without checking the condition
+// It will run first go to the body execute body once then check the condition 
+//if it is true --> repeat
+//if it is false --. Stop
+// so it will execute atleast once
+
+
+int startingNumber1 = 111;
+int product;
+
+Console.WriteLine("Please enter a number: ");
+int userInput1 = Convert.ToInt32(Console.ReadLine());
+
+do
+{
+    product = startingNumber1 * userInput1;
+    Console.WriteLine($"{userInput1} * {startingNumber1} = {product}");
+  //  Console.WriteLine(userInput1 * startingNumber1 = product);
+    startingNumber1 += 1;
+
+} while (startingNumber1 <= 10);
