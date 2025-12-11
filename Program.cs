@@ -261,85 +261,239 @@ using Week2DemoProject;
 
 // Switch Case
 
-Console.WriteLine("Enter the day of week");
+//Console.WriteLine("Enter the day of week");
 
-int dayOfWeek = int.Parse(Console.ReadLine());
+//int dayOfWeek = int.Parse(Console.ReadLine());
 
-switch (dayOfWeek) {
+//switch (dayOfWeek) {
 
-    case 1:
-        Console.WriteLine("Monday");
-        break;
-    case 2: 
-        Console.WriteLine("Tuesday");
-        break;
-    case 3: 
-         Console.WriteLine("Wednesday");
-         break;
-    case 4:
-   
-        Console.WriteLine("Thursday");
-        break;
-    case 5: 
-         Console.WriteLine("Friday");
-         break;
+//    case 1:
+//        Console.WriteLine("Monday");
+//        break;
+//    case 2: 
+//        Console.WriteLine("Tuesday");
+//        break;
+//    case 3: 
+//         Console.WriteLine("Wednesday");
+//         break;
+//    case 4:
 
-    case 6:
-        Console.WriteLine("SaturDay");
-        break;
-    case 7: 
-         Console.WriteLine("Sunday");
-         break;
-    default:
-        Console.WriteLine("Please Enter valid input");
-        break;
+//        Console.WriteLine("Thursday");
+//        break;
+//    case 5: 
+//         Console.WriteLine("Friday");
+//         break;
+
+//    case 6:
+//        Console.WriteLine("SaturDay");
+//        break;
+//    case 7: 
+//         Console.WriteLine("Sunday");
+//         break;
+//    default:
+//        Console.WriteLine("Please Enter valid input");
+//        break;
+
+//}
+
+
+////Loops 
+////While loop --- Condition is checked first if condition is true loop starts,
+////if condition is false = loop runs 0 times.
+
+//Console.WriteLine("Enter a input number");
+
+////int inputNum = int.Parse(Console.ReadLine());
+
+//int inputNum = Convert.ToInt32(Console.ReadLine());
+
+//int startNum = 0;
+
+//while ( startNum <= inputNum)
+//{
+//    Console.WriteLine(startNum);
+//    startNum = startNum + 3;
+
+
+//}
+
+
+
+////do while - Loop starts without checking the condition
+//// It will run first go to the body execute body once then check the condition 
+////if it is true --> repeat
+////if it is false --. Stop
+//// so it will execute atleast once
+
+
+//int startingNumber1 = 111;
+//int product;
+
+//Console.WriteLine("Please enter a number: ");
+//int userInput1 = Convert.ToInt32(Console.ReadLine());
+
+//do
+//{
+//    product = startingNumber1 * userInput1;
+//    Console.WriteLine($"{userInput1} * {startingNumber1} = {product}");
+//  //  Console.WriteLine(userInput1 * startingNumber1 = product);
+//    startingNumber1 += 1;
+
+//} while (startingNumber1 <= 10);
+
+
+//// for loops
+
+//Console.WriteLine("Enter For loop number");
+//int userInputNum = int.Parse(Console.ReadLine());
+
+//int i;
+
+//for (i = 0; i < userInputNum; i++)
+//{
+
+//    Console.WriteLine(i);
+//}
+
+
+//string[] colors = { "Red", "Green", "Blue" };
+
+//for (i = 0; i < colors.Length; i++)
+//{
+//    Console.WriteLine(colors[i]);
+//}
+
+
+
+//int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+
+////for (i = 0; i< numbers.Length; i++)
+////{
+
+////    Console.WriteLine(numbers[i]);
+////}
+
+
+////foreach( int numb in numbers)
+////{
+
+////    Console.WriteLine(numb);
+////}
+
+//String[] days = { "Monday", "Tuesday", "Wed", "Thur", "Fri", "Sat", "Sunday" };
+
+//foreach( String d in days)
+//{
+
+//    Console.WriteLine(d);
+//}
+
+
+
+///String Operations
+///
+//Length
+
+
+//String str = "Hello, World";
+//int len = str.Length;
+
+//if(len > 10)
+//{
+//  Console.WriteLine("Can't be more than 10");
+//}
+
+//Console.WriteLine(len);
+
+//SubString
+
+
+String orgString1 = "Hello Welcome to .NET Core Full Stack";
+int exSubString = orgString1.Length;
+
+int varLength = Convert.ToInt32(exSubString);
+
+String exSubString1 = orgString1.Substring(15, varLength - 15);
+Console.WriteLine(exSubString1);
+Console.WriteLine(exSubString);
+
+//trim
+
+string name = "   Vinay   ";
+
+string result = name.Trim();
+
+Console.WriteLine(result);
+
+
+string s = "*#*#Welcome*#*#";
+
+string cleaned = s.Trim('*', '#');
+
+Console.WriteLine(cleaned);
+
+
+//Split
+
+string msg22 = "Hello Welcome to .NET Core";
+string[] words = msg22.Split(' ');
+
+foreach (string w in words)
+{
+    Console.WriteLine(w);
+}
+
+
+//Strats with returns True or False
+
+string msg = "Hello Welcome to .NET";
+
+Console.WriteLine(msg.StartsWith("Hello"));   
+Console.WriteLine(msg.StartsWith("Hi"));
+
+
+string email1 = "vinay.k@example.com";
+
+if (email1.StartsWith("vinay"))
+{
+    Console.WriteLine("Valid user prefix");
+}
+
+//Endswith returns True or False
+
+string file = "document.pdf";
+
+Console.WriteLine(file.EndsWith(".pdf"));  // true
+Console.WriteLine(file.EndsWith(".txt"));  // false
+
+
+String phoneCheck = "+1 ";
+
+if (phoneCheck.StartsWith("+1"))
+{
+    Console.WriteLine("USA PHone num");
+
+}
+
+else
+{
+    Console.WriteLine("Not USA PHone num");
 
 }
 
 
-//Loops 
-//While loop --- Condition is checked first if condition is true loop starts,
-//if condition is false = loop runs 0 times.
+//contains - check string and returns True or False
 
-Console.WriteLine("Enter a input number");
+string mssg = "Hello Welcome to .NET";
 
-//int inputNum = int.Parse(Console.ReadLine());
+Console.WriteLine(mssg.Contains("Welcome"));  
+Console.WriteLine(mssg.Contains("Hi"));
 
-int inputNum = Convert.ToInt32(Console.ReadLine());
 
-int startNum = 0;
+string email = "vinay@gmail.com";
 
-while ( startNum <= inputNum)
+if (email.Contains("@"))
 {
-    Console.WriteLine(startNum);
-    startNum = startNum + 3;
-    
-
+    Console.WriteLine("Valid email format");
 }
-
-
-
-//do while - Loop starts without checking the condition
-// It will run first go to the body execute body once then check the condition 
-//if it is true --> repeat
-//if it is false --. Stop
-// so it will execute atleast once
-
-
-int startingNumber1 = 111;
-int product;
-
-Console.WriteLine("Please enter a number: ");
-int userInput1 = Convert.ToInt32(Console.ReadLine());
-
-do
-{
-    product = startingNumber1 * userInput1;
-    Console.WriteLine($"{userInput1} * {startingNumber1} = {product}");
-  //  Console.WriteLine(userInput1 * startingNumber1 = product);
-    startingNumber1 += 1;
-
-} while (startingNumber1 <= 10);
-
-
-// new topics
