@@ -1,12 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-
-
 using Week2DemoProject;
 
 Console.Write("Hola, World");
-
-
 
 Console.WriteLine("Hello, World!");
 
@@ -50,3 +46,60 @@ Console.WriteLine(userInputPrdID);
 //Console.WriteLine(pdr.Sum());
 
 //Console.ReadLine("Your ProductName is :");
+
+
+
+
+//Student Info Class Object Creation    
+
+StudentInfo stdinfo = new StudentInfo();
+
+stdinfo.StudentName = "Vinay";
+stdinfo.StudenID = 12;
+stdinfo.StudentEmail = " ";
+stdinfo.StudentPhone = 0000000000;  
+stdinfo.StudentAddress = " ";
+Console.WriteLine(stdinfo);
+Console.WriteLine("Enter Your Student Name:");
+   var userInputStdName = Convert.ToString(Console.ReadLine());
+Console.WriteLine(userInputStdName);
+
+Console.WriteLine("Enter your Student ID:");
+var userInputStudentID = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(userInputStudentID);
+
+Console.WriteLine("Enter your Student Email:");
+var userInputStudentEmail = Convert.ToString(Console.ReadLine());
+Console.WriteLine(userInputStudentEmail);
+
+Console.WriteLine("Enter your Student Phone number:");
+var userInputPhone = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(userInputPhone);
+
+Console.WriteLine("Enter your Student Address:");
+var userInputStudentAddress = Convert.ToString(Console.ReadLine());
+Console.WriteLine(userInputStudentAddress);
+
+
+
+
+//Arithemetic Operations
+
+int ea = 20;
+int eb = 30;
+
+//dynamic 
+Console.WriteLine("Enter the first number:");
+int sa = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Enter the Second number:");
+int sb = Convert.ToInt32(Console.ReadLine());
+
+var Sum = sa * sb;
+Console.WriteLine("The Sum of 2 numbers :");
+Console.WriteLine(Sum);
+
+
+
+
+
+

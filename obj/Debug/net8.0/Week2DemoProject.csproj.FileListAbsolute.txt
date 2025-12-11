@@ -12,3 +12,4 @@ C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\obj\Debug\net8.0\
 C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\obj\Debug\net8.0\Week2DemoProject.pdb
 C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\obj\Debug\net8.0\Week2DemoProject.genruntimeconfig.cache
 C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\obj\Debug\net8.0\ref\Week2DemoProject.dll
+C:\Users\Vinnu\source\repos\DOTNETCORE_BASICS\Week2DemoProject\obj\Debug\net8.0\Week2DemoProject.sourcelink.json
