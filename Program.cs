@@ -2,6 +2,7 @@
 
 using System;
 using Week2DemoProject;
+using static Week2DemoProject.ConditionsAndLoops;
 
 //Console.Write("Hola, World");
 
@@ -496,4 +497,92 @@ string email = "vinay@gmail.com";
 if (email.Contains("@"))
 {
     Console.WriteLine("Valid email format");
+ //   getCurrentYear();
+
+
 }
+getCurrentYear gcY = new getCurrentYear();
+
+//void getCurrentYear()
+//{
+//    DateTime currYear = DateTime.Now;
+//    int cYear = currYear.Year;
+//    int cMonth = currYear.Month;
+
+//    Console.WriteLine(currYear);
+//    Console.WriteLine(cYear);
+//    Console.WriteLine(cMonth);
+
+//}
+
+
+int getCurrentYear1()
+{
+    DateTime currYear = DateTime.Now;
+    int cYear = currYear.Year;
+    int cMonth = currYear.Month;
+    
+    Console.WriteLine(currYear);
+    Console.WriteLine(cYear);
+    Console.WriteLine(cMonth);
+    return 1;
+}
+
+getCurrentYear1();
+
+
+String getCurrentYear2()
+{
+    DateTime currYear = DateTime.Now;
+    int cYear = currYear.Year;
+    int cMonth = currYear.Month;
+
+    Console.WriteLine(currYear);
+    Console.WriteLine(cYear);
+    Console.WriteLine(cMonth);
+    return "";
+}
+
+getCurrentYear2();
+
+
+bool getCurrentYear3()
+{
+    DateTime currYear = DateTime.Now;
+    int cYear = currYear.Year;
+    int cMonth = currYear.Month;
+
+    Console.WriteLine(currYear);
+    Console.WriteLine(cYear);
+    Console.WriteLine(cMonth);
+    return true;
+}
+
+getCurrentYear3();
+
+Calculator calc = new Calculator();
+
+Console.WriteLine(calc.Add(10, 5));
+Console.WriteLine(calc.Mul(4, 3));
+
+
+//Scope of Variables
+
+String myName = "Vinay Goud";
+
+void Method11()
+{
+    myName = "Vinnu";
+    Console.WriteLine(myName);
+}
+
+void method12()
+{
+    myName = "Kumar";
+    Console.WriteLine(myName);
+}
+
+
+Method11();
+method12();
+
